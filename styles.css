@@ -16,6 +16,7 @@ h1 {
   font-size: 3.5em;
   text-align: center;
   color: darkslategray;
+  margin-bottom: 0;
 }
 
 h1 .title-cursive {
@@ -28,6 +29,13 @@ h1 .title-cursive {
 h1 .title-symbol {
   padding: 0 0.2em;
   font-size: 1.5em;
+}
+
+@media (max-width: 765px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
 }
 
 footer {
