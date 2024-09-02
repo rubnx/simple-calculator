@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+body {
+  background-color: lightgray;
+}
+
+.app {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'SUSE', 'arial', 'sans-serif';
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+  color: darkslategray;
+}
+
+h1 .title-cursive {
+  color: chocolate;
+  font-style: italic;
+
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+h1 .title-symbol {
+  padding: 0 0.2em;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  color: darkslategray;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 5% auto;
+  width: 50%;
+  max-width: 350px;
+  min-width: 300px;
+  border: 1px solid dimgrey;
+  padding: 1.5em;
+  border-radius: 15px;
+  background-color: dimgrey;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.display {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  aspect-ratio: 10/3;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: bisque;
+}
+
+.display-content {
+  flex-wrap: wrap;
+  font-size: 4em;
+  text-align: right;
+  padding: 16px;
+  color: darkslategrey;
+  overflow-y: hidden;
+}
+
+.number-pad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+}
+
+.btn {
+  font-size: 1.3em;
+  height: 3em;
+  border-radius: 5px;
+  color: darkslategrey;
+  border: 1px solid darkslategrey;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.base {
+  background-color: gainsboro;
+}
+
+.base:hover {
+  background-color: aliceblue;
+}
+
+.base:active {
+  background-color: gainsboro;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.operation {
+  background-color: darkorange;
+}
+
+.operation:hover {
+  background-color: orange;
+}
+
+.operation:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.number {
+  background-color: lightslategray;
+  color: white;
+}
+
+.number:hover {
+  background-color: lightgray;
+  color: darkslategrey;
+}
+
+.number:active {
+  background-color: lightgray;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.zero {
+  grid-column: span 2;
+}
