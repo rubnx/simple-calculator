@@ -144,3 +144,39 @@ footer {
 .zero {
   grid-column: span 2;
 }
+
+/* Media query for mobile devices */
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover {
+    background-color: initial; /* Disable hover styles on mobile */
+    color: initial;
+  }
+
+  .btn:active {
+    transition: none; /* Remove transition for immediate effect */
+  }
+
+  .btn:active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    z-index: 1;
+  }
+
+  /* Specific active states for different button types */
+  .base:active:after {
+    background-color: gainsboro;
+  }
+
+  .operation:active:after {
+    background-color: darkorange;
+  }
+
+  .number:active:after {
+    background-color: lightslategray;
+  }
+}
