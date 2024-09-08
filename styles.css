@@ -144,9 +144,3 @@ footer {
 .zero {
   grid-column: span 2;
 }
-
-/* This should help with the color of active button on mobile */
-.btn:active {
-  background-color: inherit; /* Reset the active background color */
-  -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
-}

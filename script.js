@@ -13,11 +13,21 @@ const toggleSign = document.querySelector('.toggle-sign');
 const percentage = document.querySelector('.percentage');
 const result = document.querySelector('.equal');
 const decimal = document.querySelector('.decimal');
+const button = document.querySelectorAll('.btn');
 
 // Event Listeners
 numPad.addEventListener('click', numPadFunction);
 result.addEventListener('click', calculateResult);
 percentage.addEventListener('click', calculatePercentage);
+
+// Reset the button bg color after touching on mobile
+button.forEach((button) => {
+  button.addEventListener('touchend', function () {
+    setTimeout(() => {
+      this.style.backgroundColor = ''; // Reset background color after touch ends
+    }, 100); // Brief delay to show active state before reset
+  });
+});
 
 // What to do when click on numbers, operations and sign toggle
 function numPadFunction(e) {
