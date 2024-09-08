@@ -111,12 +111,6 @@ footer {
   transform: translateY(2px);
 }
 
-/* This should help with the color of active button on mobile */
-.btn:active {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
 .operation {
   background-color: darkorange;
 }
@@ -149,4 +143,10 @@ footer {
 
 .zero {
   grid-column: span 2;
+}
+
+/* This should help with the color of active button on mobile */
+.btn:active {
+  background-color: inherit; /* Reset the active background color */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
 }
