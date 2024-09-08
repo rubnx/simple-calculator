@@ -33,7 +33,7 @@ h1 .title-symbol {
 
 @media (max-width: 765px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.2em;
     line-height: 1.2em;
   }
 }
@@ -143,4 +143,28 @@ footer {
 
 .zero {
   grid-column: span 2;
+}
+
+/* Disable hover styles on touch devices */
+@media (hover: none) {
+  .btn:hover {
+    background-color: unset; /* Remove hover background color */
+    color: unset; /* Remove hover text color */
+  }
+
+  /* For different button types */
+  .base:hover {
+    background-color: gainsboro; /* Reset to default base background */
+    color: darkslategrey; /* Reset to default base text color */
+  }
+
+  .operation:hover {
+    background-color: darkorange; /* Reset to default operation background */
+    color: darkslategrey; /* Reset to default operation text color */
+  }
+
+  .number:hover {
+    background-color: lightslategray; /* Reset to default number background */
+    color: white; /* Reset to default number text color */
+  }
 }
