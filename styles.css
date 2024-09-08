@@ -111,6 +111,12 @@ footer {
   transform: translateY(2px);
 }
 
+/* This should help with the color of active button on mobile */
+.btn:active {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .operation {
   background-color: darkorange;
 }
@@ -143,33 +149,4 @@ footer {
 
 .zero {
   grid-column: span 2;
-}
-
-/* Media query for mobile devices */
-@media (hover: hover) and (pointer: fine) {
-  .base:hover {
-    background-color: aliceblue;
-  }
-
-  .operation:hover {
-    background-color: orange;
-  }
-
-  .number:hover {
-    background-color: lightgray;
-    color: darkslategrey;
-  }
-
-  .btn:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(2px);
-  }
-}
-
-/* Mobile-specific styles */
-@media (hover: none) and (pointer: coarse) {
-  .btn:active {
-    opacity: 0.7; /* Slight fade effect for visual feedback */
-    transition: opacity 0.1s ease;
-  }
 }
