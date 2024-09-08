@@ -35,12 +35,14 @@ h1 .title-symbol {
   h1 {
     font-size: 2.2em;
     line-height: 1.2em;
+    padding: 0.2em 0 0.5em 0;
   }
 }
 
 footer {
   text-align: center;
   color: darkslategray;
+  padding: 0.2em 0 0.5em 0;
 }
 
 .calculator {
